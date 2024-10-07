@@ -1,0 +1,43 @@
+/* Dark background for the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style for the clock container */
+.clock {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5); /* Outer neon glow */
+    transition: transform 0.3s ease; /* For zoom effect */
+}
+
+/* Neon glow effect for text */
+#date, #time {
+    margin: 0;
+    padding: 20px;
+    font-size: 3.5rem;
+    color: #08e2e2; /* Neon blue color */
+    text-shadow: 0 0 10px #00FFFF, 0 0 20px #00FFFF, 0 0 40px #00FFFF; /* Glow effect */
+    letter-spacing: 2px; /* Spacing between letters */
+    transition: transform 0.3s ease; /* Smooth zoom on hover */
+}
+
+/* Zoom effect on hover */
+.clock:hover {
+    transform: scale(1.1); /* Slight zoom when hovered */
+    box-shadow: 0 0 60px rgba(0, 255, 255, 0.7), 0 0 120px rgba(0, 255, 255, 1); /* Stronger glow when hovered */
+}
+
+/* Date and time styling */
+#date {
+    margin-bottom: 10px;
+}
